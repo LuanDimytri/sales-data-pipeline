@@ -2,10 +2,11 @@ import pandas as pd
 from faker import Faker
 
 fake = Faker("pt_BR")
+Faker.seed(42)
 
 customers = []
 
-for customer_id in range(1, 11):
+for customer_id in range(1,501):
     customer = {
         "customer_id": customer_id,
         "name": fake.name(),

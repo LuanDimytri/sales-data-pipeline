@@ -1,101 +1,101 @@
 product_id,product_name,category,price
-1,Mousepad Gamer,Periféricos,657.46
-2,Tablet,Eletrônicos,222.55
-3,Smartwatch,Eletrônicos,1447.64
-4,Monitor Ultrawide,Monitores,1504.45
-5,Monitor 27,Monitores,3814.12
-6,Tablet,Eletrônicos,3415.83
-7,Webcam Full HD,Eletrônicos,4471.68
-8,Microfone USB,Áudio,176.06
-9,Mousepad Gamer,Periféricos,450.83
-10,Cabo USB-C,Acessórios,24.6
-11,Cabo USB-C,Acessórios,117.13
-12,Fone Bluetooth,Áudio,782.77
-13,Suporte para Notebook,Acessórios,23.0
-14,Microfone USB,Áudio,338.31
-15,Memória RAM 16GB,Informática,5234.09
-16,Tablet,Eletrônicos,2770.21
-17,Adaptador USB,Acessórios,118.02
-18,Processador,Informática,4755.2
-19,Mouse Gamer,Periféricos,818.96
-20,Placa de Vídeo,Informática,151.34
-21,Suporte para Notebook,Acessórios,404.85
-22,Processador,Informática,5615.3
-23,Monitor Ultrawide,Monitores,2031.13
-24,Mouse Gamer,Periféricos,197.71
-25,Adaptador USB,Acessórios,479.03
-26,Suporte para Notebook,Acessórios,174.93
-27,Controle USB,Periféricos,138.11
-28,Microfone USB,Áudio,190.24
-29,Microfone USB,Áudio,1278.87
-30,Monitor 27,Monitores,3216.77
-31,Monitor 27,Monitores,4132.08
-32,Smartwatch,Eletrônicos,3675.69
-33,Hub USB,Eletrônicos,2727.52
-34,Monitor Ultrawide,Monitores,4879.02
-35,Mouse Gamer,Periféricos,409.61
-36,Controle USB,Periféricos,574.44
-37,Mouse Gamer,Periféricos,837.93
-38,Microfone USB,Áudio,946.85
-39,SSD 1TB,Informática,6907.48
-40,Memória RAM 16GB,Informática,4661.08
-41,Cabo USB-C,Acessórios,355.24
-42,Suporte para Notebook,Acessórios,32.45
-43,Caixa de Som,Áudio,380.45
-44,Mousepad Gamer,Periféricos,324.92
-45,Monitor 24,Monitores,859.06
-46,Monitor Ultrawide,Monitores,1547.56
-47,Cabo USB-C,Acessórios,59.49
-48,Controle USB,Periféricos,314.07
-49,Suporte para Notebook,Acessórios,321.49
-50,Cabo USB-C,Acessórios,188.77
-51,SSD 1TB,Informática,3024.43
-52,Cabo HDMI,Acessórios,112.66
-53,Teclado Mecânico,Periféricos,303.63
-54,SSD 1TB,Informática,7499.57
-55,Fone Bluetooth,Áudio,989.65
+1,Cabo HDMI,Acessórios,323.32
+2,Mousepad Gamer,Periféricos,73.76
+3,Fone Bluetooth,Áudio,448.79
+4,Headset Gamer,Áudio,373.66
+5,Cabo HDMI,Acessórios,370.87
+6,Hub USB,Eletrônicos,3415.83
+7,Mouse Gamer,Periféricos,897.57
+8,Teclado Mecânico,Periféricos,132.59
+9,Headset Gamer,Áudio,661.79
+10,Smartwatch,Eletrônicos,246.01
+11,Adaptador USB,Acessórios,117.13
+12,Microfone USB,Áudio,782.77
+13,Tablet,Eletrônicos,230.03
+14,Teclado Mecânico,Periféricos,238.9
+15,Adaptador USB,Acessórios,328.44
+16,Monitor 27,Monitores,2952.24
+17,Fone Bluetooth,Áudio,369.64
+18,Monitor 24,Monitores,3151.7
+19,Controle USB,Periféricos,818.96
+20,Mousepad Gamer,Periféricos,56.17
+21,Monitor Ultrawide,Monitores,4126.19
+22,Monitor 24,Monitores,3641.63
+23,Adaptador USB,Acessórios,176.72
+24,Webcam Full HD,Eletrônicos,861.85
+25,SSD 1TB,Informática,7661.98
+26,Tablet,Eletrônicos,1749.31
+27,Suporte para Notebook,Acessórios,55.45
+28,Smartwatch,Eletrônicos,573.91
+29,Cabo HDMI,Acessórios,425.27
+30,Teclado Mecânico,Periféricos,623.54
+31,Monitor 24,Monitores,4132.08
+32,Headset Gamer,Áudio,1108.11
+33,Placa de Vídeo,Informática,4336.2
+34,Placa de Vídeo,Informática,7787.61
+35,Caixa de Som,Áudio,598.87
+36,Monitor 24,Monitores,2984.18
+37,Suporte para Notebook,Acessórios,416.41
+38,Cabo HDMI,Acessórios,313.07
+39,Smartwatch,Eletrônicos,4322.36
+40,Smartwatch,Eletrônicos,2929.03
+41,Microfone USB,Áudio,1071.63
+42,Placa de Vídeo,Informática,462.01
+43,Cabo USB-C,Acessórios,121.67
+44,Suporte para Notebook,Acessórios,151.8
+45,Teclado Mecânico,Periféricos,125.8
+46,Mousepad Gamer,Periféricos,271.15
+47,Placa de Vídeo,Informática,897.91
+48,Teclado Mecânico,Periféricos,314.07
+49,Tablet,Eletrônicos,3214.85
+50,Microfone USB,Áudio,579.01
+51,Processador,Informática,3024.43
+52,Caixa de Som,Áudio,353.79
+53,Fone Bluetooth,Áudio,437.12
+54,Suporte para Notebook,Acessórios,468.96
+55,Adaptador USB,Acessórios,327.54
 56,Hub USB,Eletrônicos,3084.74
-57,Mouse Gamer,Periféricos,212.58
-58,Suporte para Notebook,Acessórios,367.27
-59,Controle USB,Periféricos,205.23
-60,Cabo USB-C,Acessórios,195.93
-61,SSD 1TB,Informática,7917.23
-62,Microfone USB,Áudio,978.0
-63,Mouse Gamer,Periféricos,579.1
-64,Mousepad Gamer,Periféricos,700.38
-65,Monitor 27,Monitores,4292.83
-66,Microfone USB,Áudio,1175.2
-67,Fone Bluetooth,Áudio,382.12
-68,Mouse Gamer,Periféricos,80.5
-69,Smartwatch,Eletrônicos,1645.72
-70,Placa de Vídeo,Informática,2215.15
-71,Cabo USB-C,Acessórios,113.38
-72,Cabo USB-C,Acessórios,472.03
-73,Processador,Informática,7023.3
-74,Headset Gamer,Áudio,506.28
-75,Teclado Mecânico,Periféricos,672.67
-76,Controle USB,Periféricos,425.85
-77,Monitor 27,Monitores,4615.46
-78,Monitor 24,Monitores,2564.83
+57,Monitor 24,Monitores,1270.12
+58,Microfone USB,Áudio,1107.23
+59,Mouse Gamer,Periféricos,205.23
+60,Teclado Mecânico,Periféricos,410.48
+61,Cabo USB-C,Acessórios,494.87
+62,Adaptador USB,Acessórios,323.6
+63,Webcam Full HD,Eletrônicos,2829.05
+64,Processador,Informática,5508.45
+65,Hub USB,Eletrônicos,4229.97
+66,Tablet,Eletrônicos,3902.4
+67,Webcam Full HD,Eletrônicos,1222.34
+68,Cabo HDMI,Acessórios,25.73
+69,Suporte para Notebook,Acessórios,164.57
+70,Suporte para Notebook,Acessórios,141.19
+71,Mousepad Gamer,Periféricos,250.43
+72,Memória RAM 16GB,Informática,7548.99
+73,SSD 1TB,Informática,7023.3
+74,Suporte para Notebook,Acessórios,164.19
+75,Smartwatch,Eletrônicos,3311.65
+76,Webcam Full HD,Eletrônicos,2038.6
+77,Suporte para Notebook,Acessórios,458.13
+78,Cabo USB-C,Acessórios,234.84
 79,Caixa de Som,Áudio,434.08
-80,Cabo HDMI,Acessórios,130.85
-81,Caixa de Som,Áudio,863.98
-82,Cabo HDMI,Acessórios,138.74
-83,Suporte para Notebook,Acessórios,296.45
-84,Fone Bluetooth,Áudio,1351.84
-85,Adaptador USB,Acessórios,205.71
-86,Monitor Ultrawide,Monitores,1486.94
-87,Teclado Mecânico,Periféricos,997.66
-88,Processador,Informática,4125.26
-89,Teclado Mecânico,Periféricos,136.36
-90,SSD 1TB,Informática,472.22
-91,Webcam Full HD,Eletrônicos,637.28
-92,Monitor 27,Monitores,3323.51
-93,Microfone USB,Áudio,1198.52
-94,Hub USB,Eletrônicos,2168.58
-95,Monitor Ultrawide,Monitores,785.87
-96,Cabo USB-C,Acessórios,196.99
-97,SSD 1TB,Informática,7969.36
-98,Mouse Gamer,Periféricos,552.66
-99,Mousepad Gamer,Periféricos,972.52
-100,Headset Gamer,Áudio,1298.13
+80,Headset Gamer,Áudio,407.61
+81,Tablet,Eletrônicos,2850.7
+82,SSD 1TB,Informática,2175.66
+83,Mousepad Gamer,Periféricos,605.36
+84,Monitor 24,Monitores,4540.2
+85,Teclado Mecânico,Periféricos,429.43
+86,Webcam Full HD,Eletrônicos,1174.67
+87,Controle USB,Periféricos,997.66
+88,Teclado Mecânico,Periféricos,534.05
+89,Microfone USB,Áudio,181.82
+90,Smartwatch,Eletrônicos,330.87
+91,Monitor Ultrawide,Monitores,993.42
+92,Hub USB,Eletrônicos,3174.49
+93,Fone Bluetooth,Áudio,1198.52
+94,Suporte para Notebook,Acessórios,216.86
+95,Placa de Vídeo,Informática,601.87
+96,Processador,Informática,3114.79
+97,Teclado Mecânico,Periféricos,996.32
+98,Headset Gamer,Áudio,817.22
+99,Monitor 24,Monitores,4869.85
+100,Smartwatch,Eletrônicos,4317.82

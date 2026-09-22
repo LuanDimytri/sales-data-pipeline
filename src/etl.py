@@ -3,15 +3,28 @@ from pathlib import Path
 import pandas as pd
 
 
-RAW_DIR = Path("data/raw")
-PROCESSED_DIR = Path("data/processed")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+RAW_DIR = BASE_DIR / "data" / "raw"
+PROCESSED_DIR = BASE_DIR / "data" / "processed"
 
 
 def load_data():
-    customers = pd.read_csv(RAW_DIR / "customers.csv")
-    products = pd.read_csv(RAW_DIR / "products.csv")
-    orders = pd.read_csv(RAW_DIR / "orders.csv")
-    order_items = pd.read_csv(RAW_DIR / "order_items.csv")
+    customers = pd.read_csv(
+        RAW_DIR / "customers.csv"
+    )
+
+    products = pd.read_csv(
+        RAW_DIR / "products.csv"
+    )
+
+    orders = pd.read_csv(
+        RAW_DIR / "orders.csv"
+    )
+
+    order_items = pd.read_csv(
+        RAW_DIR / "order_items.csv"
+    )
 
     return customers, products, orders, order_items
 
@@ -20,13 +33,17 @@ def transform_order_items(order_items):
     order_items = order_items.copy()
 
     order_items["total_price"] = (
-        order_items["quantity"] * order_items["unit_price"]
+        order_items["quantity"]
+        * order_items["unit_price"]
     )
+
+    assert order_items["total_price"].notna().all()
+    assert (order_items["total_price"] > 0).all()
 
     return order_items
 
 
-def transform_sales(order_items, orders):
+def transform_sales(order_items, orders, products):
     sales = order_items.merge(
         orders[
             [
@@ -39,8 +56,23 @@ def transform_sales(order_items, orders):
         how="left",
     )
 
+    sales = sales.merge(
+        products[
+            [
+                "product_id",
+                "product_name",
+                "category",
+            ]
+        ],
+        on="product_id",
+        how="left",
+    )
+
     assert sales["order_date"].notna().all()
     assert sales["status"].notna().all()
+
+    assert sales["product_name"].notna().all()
+    assert sales["category"].notna().all()
 
     return sales
 
@@ -48,7 +80,9 @@ def transform_sales(order_items, orders):
 def calculate_effective_revenue(sales):
     sales = sales.copy()
 
-    sales["effective_revenue"] = sales["total_price"].where(
+    sales["effective_revenue"] = sales[
+        "total_price"
+    ].where(
         sales["status"] == "completed",
         0,
     )
@@ -73,18 +107,26 @@ def save_processed_data(sales):
 
 
 if __name__ == "__main__":
+
     customers, products, orders, order_items = load_data()
 
-    order_items = transform_order_items(order_items)
+    order_items = transform_order_items(
+        order_items
+    )
 
     sales = transform_sales(
         order_items,
         orders,
+        products,
     )
 
-    sales = calculate_effective_revenue(sales)
+    sales = calculate_effective_revenue(
+        sales
+    )
 
-    output_path = save_processed_data(sales)
+    output_path = save_processed_data(
+        sales
+    )
 
     print(f"Clientes carregados: {len(customers)}")
     print(f"Produtos carregados: {len(products)}")
@@ -92,12 +134,15 @@ if __name__ == "__main__":
     print(f"Itens carregados: {len(order_items)}")
 
     print("\nExemplo das vendas transformadas:")
+
     print(
         sales[
             [
                 "order_item_id",
                 "order_id",
                 "product_id",
+                "product_name",
+                "category",
                 "quantity",
                 "unit_price",
                 "total_price",
@@ -109,10 +154,18 @@ if __name__ == "__main__":
     )
 
     print("\nResumo financeiro:")
-    print(f"Faturamento bruto: R$ {sales['total_price'].sum():,.2f}")
+
+    print(
+        f"Faturamento bruto: "
+        f"R$ {sales['total_price'].sum():,.2f}"
+    )
+
     print(
         f"Faturamento efetivo: "
         f"R$ {sales['effective_revenue'].sum():,.2f}"
     )
 
-    print(f"\nArquivo processado salvo em: {output_path}")
+    print(
+        f"\nArquivo processado salvo em: "
+        f"{output_path}"
+    )

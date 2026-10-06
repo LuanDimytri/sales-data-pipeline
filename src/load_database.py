@@ -33,6 +33,17 @@ def insert_data(
 ):
     with connection.cursor() as cursor:
 
+        cursor.execute(
+            """
+            TRUNCATE TABLE
+                order_items,
+                orders,
+                products,
+                customers
+            RESTART IDENTITY CASCADE
+            """
+        )
+
         for row in customers.itertuples(index=False):
             cursor.execute(
                 """
